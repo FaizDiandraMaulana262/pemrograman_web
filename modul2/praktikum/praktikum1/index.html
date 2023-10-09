@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container text-center mt-5">
+        <center>
+            <div class="card" style="width: 20rem">
+                <div class="card-body">
+                    <input id="calculatorInput" class="mt-1 mb-3 form-control" type="text" value="0" />
+                    <div class="row align-items-start">
+                        <div class="row-cols-6">
+                            <input id="ac" class="btn btn-secondary my-1" type="button" value="AC" onclick="onClickButon(document.getElementById('ac').value)" />
+                            <input id="x2" class="btn btn-secondary my-1" type="button" value="X2" onclick="onClickButon(document.getElementById('x2').value)"/>
+                            <input id="." class="btn btn-secondary my-1" type="button" value="." onclick="onClickButon(document.getElementById('.').value)"/>
+                            <input id="/" class="btn btn-secondary my-1" type="button" value="/" onclick="onClickButon(document.getElementById('/').value)"/>
+                        </div>
+                        <div class="row-cols-6">
+                            <input id="7" class="btn btn-secondary my-1" type="button" value="7" onclick="onClickButon(document.getElementById('7').value)" />
+                            <input id="8" class="btn btn-secondary my-1" type="button" value="8" onclick="onClickButon(document.getElementById('8').value)" />
+                            <input id="9" class="btn btn-secondary my-1" type="button" value="9" onclick="onClickButon(document.getElementById('9').value)" />
+                            <input id="*" class="btn btn-secondary my-1" type="button" value="*" onclick="onClickButon(document.getElementById('*').value)" />
+                        </div>
+                        <div class="row-cols-6">
+                            <input id="4" class="btn btn-secondary my-1" type="button" value="4" onclick="onClickButon(document.getElementById('4').value)" />
+                            <input id="5" class="btn btn-secondary my-1" type="button" value="5" onclick="onClickButon(document.getElementById('5').value)" />
+                            <input id="6" class="btn btn-secondary my-1" type="button" value="6" onclick="onClickButon(document.getElementById('6').value)" />
+                            <input id="-" class="btn btn-secondary my-1" type="button" value="-" onclick="onClickButon(document.getElementById('-').value)" />
+                        </div>
+                        <div class="row-cols-6">
+                            <input id="1" class="btn btn-secondary my-1" type="button" value="1" onclick="onClickButon(document.getElementById('1').value)" />
+                            <input id="2" class="btn btn-secondary my-1" type="button" value="2" onclick="onClickButon(document.getElementById('2').value)" />
+                            <input id="3" class="btn btn-secondary my-1" type="button" value="3" onclick="onClickButon(document.getElementById('3').value)" />
+                            <input id="+" class="btn btn-secondary my-1" type="button" value="+" onclick="onClickButon(document.getElementById('+').value)" />
+                        </div>
+                        <div class="row-cols-6">
+                            <input id="00" class="btn btn-secondary my-1" type="button" value="00" onclick="onClickButon(document.getElementById('00').value)" />
+                            <input id="0" class="btn btn-secondary my-1" type="button" value="0" onclick="onClickButon(document.getElementById('0').value)" />
+                            <input class="btn btn-secondary my-1" type="button" value="=" onclick="onClickSubmit()" />
+                            <input id="%" class="btn btn-secondary my-1" type="button" value="MOD" onclick="onClickButon(document.getElementById('%').value)" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+</body>
+
+</html>
