@@ -5,6 +5,7 @@ import CardLandingComponents from "../components/CardLandingComponents";
 import CarouselComponents from "../components/CarouselComponents";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 
 function Landing() {
   return (
@@ -70,16 +71,28 @@ function Landing() {
             </h1>
             <Row>
               <Col>
-                <CardLandingComponents image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%201.png" stars="5"/>
+                <CardLandingComponents
+                  image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%201.png"
+                  stars="5"
+                />
               </Col>
               <Col className="my-5">
-                <CardLandingComponents image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%202.png" stars="4"/>
+                <CardLandingComponents
+                  image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%202.png"
+                  stars="4"
+                />
               </Col>
               <Col>
-                <CardLandingComponents image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%203.png" stars="4"/>
+                <CardLandingComponents
+                  image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%203.png"
+                  stars="4"
+                />
               </Col>
               <Col className="my-5">
-                <CardLandingComponents image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%204.png" stars="5"/>
+                <CardLandingComponents
+                  image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%204.png"
+                  stars="5"
+                />
               </Col>
             </Row>
           </center>
@@ -87,7 +100,45 @@ function Landing() {
       </div>
       <div className="p-5" style={{ background: "#2E4E8B" }}>
         <Container>
-          
+          <center>
+            <img
+              src="https://github.com/FaizDiandraMaulana262/pemrograman_web/blob/master/modul3/tugas/public/image/002.png?raw=true"
+              width="350"
+            />
+            <div className="py-1 mb-2" style={{ background: "white" }}></div>
+            <h3
+              style={{
+                color: "white",
+                fontFamily: "Poppins",
+                fontFamily: "sans-serif",
+              }}
+            >
+              Leave your trash gacha game and gacha with your father. Salty
+              Salty Salty, no need for rituals.
+            </h3>
+          </center>
+        </Container>
+      </div>
+      <div className="p-5" style={{ background: "#639CD9" }}>
+        <Container>
+          <center>
+            <Button variant="primary" className="mb-5">
+              <h3
+                className="px-3 py-1"
+                style={{
+                  color: "white",
+                  fontFamily: "Poppins",
+                  fontFamily: "sans-serif",
+                }}
+              >
+                Get Api Key &#8594;
+              </h3>
+            </Button>
+
+            <div>
+              
+            </div>
+          </center>
         </Container>
       </div>
     </>
