@@ -85,6 +85,11 @@ function Landing() {
           </center>
         </Container>
       </div>
+      <div className="p-5" style={{ background: "#2E4E8B" }}>
+        <Container>
+          
+        </Container>
+      </div>
     </>
   );
 }
