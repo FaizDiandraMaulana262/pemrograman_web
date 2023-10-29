@@ -70,16 +70,16 @@ function Landing() {
             </h1>
             <Row>
               <Col>
-                <CardLandingComponents />
+                <CardLandingComponents image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%201.png" stars="5"/>
+              </Col>
+              <Col className="my-5">
+                <CardLandingComponents image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%202.png" stars="4"/>
               </Col>
               <Col>
-                <CardLandingComponents />
+                <CardLandingComponents image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%203.png" stars="4"/>
               </Col>
-              <Col>
-                <CardLandingComponents />
-              </Col>
-              <Col>
-                <CardLandingComponents />
+              <Col className="my-5">
+                <CardLandingComponents image="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/assets/pngwing%204.png" stars="5"/>
               </Col>
             </Row>
           </center>
