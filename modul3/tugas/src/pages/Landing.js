@@ -3,9 +3,11 @@ import Container from "react-bootstrap/Container";
 import NavbarLandingComponent from "../components/NavbarLandingComponents";
 import CardLandingComponents from "../components/CardLandingComponents";
 import CarouselComponents from "../components/CarouselComponents";
+import FooterLandingComponents from "../components/FooterLandingComponents";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import raw from "../raw/data.json";
 
 function Landing() {
   return (
@@ -134,13 +136,25 @@ function Landing() {
                 Get Api Key &#8594;
               </h3>
             </Button>
-            <div>
-              <script type="module" src="https://md-block.verou.me/md-block.js">
-              </script>
+            <div style={{ width: "756px", height: "60px", background: "#5454C5", borderTopLeftRadius: "30px", borderTopRightRadius: "30px"}}>
+                <p className="py-2 text-white" style={{width: "350px", background: "#BCBCBC", fontFamily: "'Inter', sans-serif"}}>https://api.waifuBapakMu.com/charachter</p>
             </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%257B%250A%2520%2520%2522error%2522%253A%2520false%252C%250A%2520%2520%2522message%2522%253A%2520%2522Success%2520Fetching%2520Waifu%2520Bapakmu%2522%252C%250A%2520%2520%2522data%2522%253A%2520%257B%250A%2520%2520%2520%2520%2522id%2522%253A%2520%25221eoins-032daa%2522%252C%250A%2520%2520%2520%2520%2522name%2522%253A%2520%2522Arthoria%2520Pendragon%2522%252C%250A%2520%2520%2520%2520%2522anime%2522%253A%2520%2522Fate%2520Series%2522%252C%250A%2520%2520%2520%2520%2522description%2522%253A%2520%2522One%2520and%2520only%2520waifu%2520salman.%2522%252C%2520%250A%2520%2520%2520%2520%2522stars%2522%253A%25205%252C%2520%250A%2520%2520%2520%2520%2522image%2522%253A%2520%2522https%253A%252F%252Fcdn.myanimelist.net%252Fimages%252Fcharacters%252F16%252F319960.jpg%2522%250A%2520%2520%257D%2520%250A%257D"
+              style={{
+                width: "773px",
+                height: "409px",
+                border: "0",
+                transform: "scale(1)",
+                overflow: "hidden",
+              }}
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </center>
         </Container>
       </div>
+
+      <FooterLandingComponents />
     </>
   );
 }
