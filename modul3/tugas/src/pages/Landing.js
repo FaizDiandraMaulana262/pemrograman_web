@@ -134,9 +134,9 @@ function Landing() {
                 Get Api Key &#8594;
               </h3>
             </Button>
-
             <div>
-              
+              <script type="module" src="https://md-block.verou.me/md-block.js">
+              </script>
             </div>
           </center>
         </Container>
