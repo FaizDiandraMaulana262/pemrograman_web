@@ -8,7 +8,7 @@ function NavbarLandingComponent() {
     <>
       <Navbar style={{background: "#342056"}}>
         <Container>
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="/">
           <img
               src="https://raw.githubusercontent.com/FaizDiandraMaulana262/pemrograman_web/master/modul3/tugas/public/image/dad1.png"
               width="40"
@@ -18,12 +18,12 @@ function NavbarLandingComponent() {
             />
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home"><b style={{color: "white"}}>Home</b></Nav.Link>
-            <Nav.Link href="#features"><b style={{color: "white"}}>Features</b></Nav.Link>
-            <Nav.Link href="#pricing"><b style={{color: "white"}}>Pricing</b></Nav.Link>
+            <Nav.Link href="/"><b style={{color: "white"}}>Home</b></Nav.Link>
+            <Nav.Link href="about"><b style={{color: "white"}}>About</b></Nav.Link>
+            <Nav.Link href="contact"><b style={{color: "white"}}>Contact</b></Nav.Link>
           </Nav>
           <Nav className="ms-auto">
-            <Nav.Link href="#home"><Button variant="success">Log In</Button></Nav.Link>
+            <Nav.Link href="login"><Button variant="success">Log In</Button></Nav.Link>
             <Nav.Link href="#features"><Button variant="outline-info">Start Gacha</Button></Nav.Link>
           </Nav>
         </Container>

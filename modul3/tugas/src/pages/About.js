@@ -1,4 +1,4 @@
-import NavbarComponents from '../components/NavbarComponents';
+import NavbarLandingComponent from "../components/NavbarLandingComponents";
 import HeadingComponents from '../components/HeadingComponents';
 import Container from "react-bootstrap/Container";
 
@@ -6,7 +6,7 @@ function About() {
   return (
     <div>
       <HeadingComponents/>
-      <NavbarComponents/>
+      <NavbarLandingComponent/>
 
       
       <Container><h1>Ini About</h1></Container>

@@ -1,17 +1,18 @@
 import "../components/HeadingComponents";
 import Container from "react-bootstrap/Container";
 import NavbarLandingComponent from "../components/NavbarLandingComponents";
+import HeadingComponents from '../components/HeadingComponents';
 import CardLandingComponents from "../components/CardLandingComponents";
 import CarouselComponents from "../components/CarouselComponents";
 import FooterLandingComponents from "../components/FooterLandingComponents";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import raw from "../raw/data.json";
 
 function Landing() {
   return (
     <>
+      <HeadingComponents/>
       <NavbarLandingComponent />
       <div style={{ background: "#639CD9" }}>
         <Container>
