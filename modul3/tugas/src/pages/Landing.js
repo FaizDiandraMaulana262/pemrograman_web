@@ -1,7 +1,7 @@
 import "../components/HeadingComponents";
 import Container from "react-bootstrap/Container";
 import NavbarLandingComponent from "../components/NavbarLandingComponents";
-import HeadingComponents from '../components/HeadingComponents';
+import HeadingComponents from "../components/HeadingComponents";
 import CardLandingComponents from "../components/CardLandingComponents";
 import CarouselComponents from "../components/CarouselComponents";
 import FooterLandingComponents from "../components/FooterLandingComponents";
@@ -12,7 +12,7 @@ import Button from "react-bootstrap/Button";
 function Landing() {
   return (
     <>
-      <HeadingComponents/>
+      <HeadingComponents />
       <NavbarLandingComponent />
       <div style={{ background: "#639CD9" }}>
         <Container>
@@ -125,20 +125,39 @@ function Landing() {
       <div className="p-5" style={{ background: "#639CD9" }}>
         <Container>
           <center>
-            <Button variant="primary" className="mb-5">
-              <h3
-                className="px-3 py-1"
+            <a href="response">
+              <Button variant="primary" className="mb-5">
+                <h3
+                  className="px-3 py-1"
+                  style={{
+                    color: "white",
+                    fontFamily: "Poppins",
+                    fontFamily: "sans-serif",
+                  }}
+                >
+                  Get Response &#8594;
+                </h3>
+              </Button>
+            </a>
+            <div
+              style={{
+                width: "756px",
+                height: "60px",
+                background: "#5454C5",
+                borderTopLeftRadius: "30px",
+                borderTopRightRadius: "30px",
+              }}
+            >
+              <p
+                className="py-2 text-white"
                 style={{
-                  color: "white",
-                  fontFamily: "Poppins",
-                  fontFamily: "sans-serif",
+                  width: "350px",
+                  background: "#BCBCBC",
+                  fontFamily: "'Inter', sans-serif",
                 }}
               >
-                Get Api Key &#8594;
-              </h3>
-            </Button>
-            <div style={{ width: "756px", height: "60px", background: "#5454C5", borderTopLeftRadius: "30px", borderTopRightRadius: "30px"}}>
-                <p className="py-2 text-white" style={{width: "350px", background: "#BCBCBC", fontFamily: "'Inter', sans-serif"}}>https://api.waifuBapakMu.com/charachter</p>
+                https://api.waifuBapakMu.com/charachter
+              </p>
             </div>
             <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%257B%250A%2520%2520%2522error%2522%253A%2520false%252C%250A%2520%2520%2522message%2522%253A%2520%2522Success%2520Fetching%2520Waifu%2520Bapakmu%2522%252C%250A%2520%2520%2522data%2522%253A%2520%257B%250A%2520%2520%2520%2520%2522id%2522%253A%2520%25221eoins-032daa%2522%252C%250A%2520%2520%2520%2520%2522name%2522%253A%2520%2522Arthoria%2520Pendragon%2522%252C%250A%2520%2520%2520%2520%2522anime%2522%253A%2520%2522Fate%2520Series%2522%252C%250A%2520%2520%2520%2520%2522description%2522%253A%2520%2522One%2520and%2520only%2520waifu%2520salman.%2522%252C%2520%250A%2520%2520%2520%2520%2522stars%2522%253A%25205%252C%2520%250A%2520%2520%2520%2520%2522image%2522%253A%2520%2522https%253A%252F%252Fcdn.myanimelist.net%252Fimages%252Fcharacters%252F16%252F319960.jpg%2522%250A%2520%2520%257D%2520%250A%257D"

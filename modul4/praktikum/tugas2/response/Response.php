@@ -4,7 +4,7 @@ namespace response;
 
 trait Response{
     public function responseFormatter($code, $message, $data = null){
-        return json_encode([
+        return ([
             "status" => $code,
             "error" => $message,
             "data" => $data

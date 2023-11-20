@@ -8,7 +8,6 @@ function About() {
       <HeadingComponents/>
       <NavbarLandingComponent/>
 
-      
       <Container><h1>Ini About</h1></Container>
     </div>
   );

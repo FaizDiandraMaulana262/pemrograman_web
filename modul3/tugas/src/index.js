@@ -5,6 +5,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
+import Response from './pages/Response';
 
 import {
   createBrowserRouter,
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "login",
     element: <Login/>
+  },
+  {
+    path: "response",
+    element: <Response/>
   }
 ]);
 

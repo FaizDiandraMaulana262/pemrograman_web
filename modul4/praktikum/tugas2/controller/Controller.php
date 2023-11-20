@@ -1,4 +1,5 @@
 <?php
+
 namespace controller;
 
 require_once __DIR__ . "/../response/Response.php";
@@ -7,34 +8,35 @@ require_once __DIR__ . '/../data/data.php';
 use response\Response;
 use data;
 
-class Controller{
+class Controller extends data
+{
     var $dataController;
-    
     use Response;
-    public function __construct() {
-        $this->dataController = new data();
-    }
 
-    public function randomData(){
-        $data = $this->dataController->data;
+    public function __construct()
+    {
+        $this->dataController = $this->data;
+    }
+    
+    public function randomData()
+    {
+        $data = $this->dataController;
         $random = array_rand($data, 1);
         $response = http_response_code();
         $error = true;
 
-        if($response <= 200 && $response < 300)
-        {
+        if ($response <= 200 && $response < 300) {
             $error = false;
             $data = $data[$random];
-        }
-        else{
+        } else {
             $error = true;
             $data = null;
         }
-        echo $this->responseFormatter($response, $error, $data);
+
+        header('Content-Type: application/json');
+        header("Access-Control-Allow-Origin: *");
+        header("Access-Control-Allow-Headers: *");
+
+        echo json_encode($this->responseFormatter($response, $error, $data));
     }
 }
-
-$controller = new Controller();
-$controller->randomData();
-
-?>
