@@ -2,11 +2,10 @@
 
 namespace controller;
 
-require_once __DIR__ . "/../response/Response.php";
-require_once __DIR__ . '/../data/data.php';
+include __DIR__ . "/../response/Response.php";
+include __DIR__ . '/../data/data.php';
 
-use response\Response;
-use data;
+use response\Response, data;
 
 class Controller extends data
 {
