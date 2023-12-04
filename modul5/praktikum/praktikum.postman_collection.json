@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "8fd5476b-1540-465e-a043-c053a7338f69",
+		"name": "praktikum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10461876"
+	},
+	"item": [
+		{
+			"name": "waifu",
+			"item": [
+				{
+					"name": "Get Waifu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/waifu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"waifu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Waifu by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/waifu/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"waifu",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Waifu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Epsilon\",\r\n    \"picture_url\": \"https://cdn.myanimelist.net/images/characters/15/483024.jpg\",\r\n    \"grade\": 5,\r\n    \"anime_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/waifu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"waifu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Waifu",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Eta\",\r\n    \"picture_url\": \"https://cdn.myanimelist.net/images/characters/15/483018.jpg\",\r\n    \"grade\": 5,\r\n    \"anime_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/waifu/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"waifu",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Waifu",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/waifu/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"waifu",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "anime",
+			"item": [
+				{
+					"name": "Get Anime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/anime",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"anime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Anime by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/anime/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"anime",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Anime",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"anime\": \"Spy x Family\",\r\n    \"deskripsi\": \"With her ability to read minds, Anya Forger is the only one who knows the true identities of her unconventional family. Her pretend father Loid operates as an elite spy code-named Twilight; her mother Yor kills on demand as the assassin Thorn Princess; and their dog, Bond, possesses the gift of precognition. Although they hide the truth from each other, this pretense of a perfectly ordinary family provides Anya with the genuine love and warmth that she longed for as an orphan.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/anime",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"anime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Anime",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"anime\": \"Sousou no Frieren\",\r\n    \"deskripsi\": \"During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/anime/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"anime",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
